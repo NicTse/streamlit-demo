@@ -1,14 +1,20 @@
 import os
 
 from deta import Deta # pip install deta
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
+# load_dotenv(".env")
+# DETA_KEY = os.getenv("DETA_KEY")
+
+import streamlit as st
 
 #Key Name: ww4o2c
 #Key Description: Project Key: ww4o2c
 #Project Key: c02r1efa_qzZpMdZMgm28PURt4JeEh8EN2A1Sd3SP
 
-load_dotenv(".env")
-DETA_KEY = os.getenv("DETA_KEY")
+DETA_KEY=st.write("DETA_KEY", st.secrets["DETA_KEY"])
+
+
+
 
 #initialise with project key
 
