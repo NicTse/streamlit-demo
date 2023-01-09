@@ -11,7 +11,7 @@ import database as db  # local import
 incomes = ["Salary", "Rental", "Blog", "Other Income"]
 expenses = ["Rent", "Utilities", "Groceries", "Car", "Other Expenses", "Saving", "Fuel", "Parking", "Transport", "VW", "Motorbike", "Shopping", "Drinks", "Others", "Entertainment", "Gift", "Homeloan", "Haircut", "Living Expense Mum", "Expense Parramatta", "Medicine", "Work related Taxable", "Badminton/Sports", "Business", "Food", "Coffee", "Lunch", "Grocery", "Dinner", "Trading", "Trip - Brissie 2203", "Trip - Melb July 22", "Trip - Jennie Nov 22"]
 
-currency = "USD"
+currency = "AUD"
 page_title = "Income and Expense Tracker"
 page_icon = ":money_with_wings:"  # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
 layout = "centered"
