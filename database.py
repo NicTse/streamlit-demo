@@ -7,9 +7,14 @@ from deta import Deta # pip install deta
 
 import streamlit as st
 
+# try:
+    # DETA_KEY=st.secrets["DETA_KEY"]
+# except:
+#     from dotenv import load_dotenv
+#     load_dotenv(".env")
+#     DETA_KEY = os.getenv("DETA_KEY")
 
 DETA_KEY=st.secrets["DETA_KEY"]
-
 
 #initialise with project key
 

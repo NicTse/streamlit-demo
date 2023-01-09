@@ -8,8 +8,9 @@ from streamlit_option_menu import option_menu  # pip install streamlit-option-me
 import database as db  # local import
 
 # -------------- SETTINGS --------------
-incomes = ["Salary", "Blog", "Other Income"]
-expenses = ["Rent", "Utilities", "Groceries", "Car", "Other Expenses", "Saving"]
+incomes = ["Salary", "Rental", "Blog", "Other Income"]
+expenses = ["Rent", "Utilities", "Groceries", "Car", "Other Expenses", "Saving", "Fuel", "Parking", "Transport", "VW", "Motorbike", "Shopping", "Drinks", "Others", "Entertainment", "Gift", "Homeloan", "Haircut", "Living Expense Mum", "Expense Parramatta", "Medicine", "Work related Taxable", "Badminton/Sports", "Business", "Food", "Coffee", "Lunch", "Grocery", "Dinner", "Trading", "Trip - Brissie 2203", "Trip - Melb July 22", "Trip - Jennie Nov 22"]
+
 currency = "USD"
 page_title = "Income and Expense Tracker"
 page_icon = ":money_with_wings:"  # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
@@ -20,7 +21,7 @@ st.set_page_config(page_title=page_title, page_icon=page_icon, layout=layout)
 st.title(page_title + " " + page_icon)
 
 # --- DROP DOWN VALUES FOR SELECTING THE PERIOD ---
-years = [datetime.today().year, datetime.today().year + 1]
+years = [datetime.today().year-1,datetime.today().year, datetime.today().year + 1]
 months = list(calendar.month_name[1:])
 
 
